@@ -1,0 +1,4 @@
+git is sourcecode tool
+git is fast
+git is open source
+git is moderate
