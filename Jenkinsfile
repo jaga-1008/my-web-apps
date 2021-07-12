@@ -2,12 +2,18 @@ pipeline{
     agent any
     stages{
         stage('build'){
+            when {
+              branch 'dev'
+            }
             steps{
                 echo "build with maven"
             }
         }
 
         stage('upload to nexus'){
+            when {
+              branch 'dev'
+            }
             steps{
                 echo "upload to nexus"
             }
